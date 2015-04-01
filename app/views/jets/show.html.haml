@@ -1,0 +1,12 @@
+%h1= @jet.title
+%p= @jet.make
+%p= @jet.plane
+%p= @jet.serial_number
+%p= @jet.age
+%p= @jet.price
+%br
+%p= @jet.description
+
+= link_to "Edit", edit_jet_path, class: "btn btn-default"
+= link_to "Delete", jet_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default"
+= link_to "Back", root_path, class: "btn btn-default"

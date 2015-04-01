@@ -1,0 +1,8 @@
+%h1 Welcome to Jets on Deck
+
+-@jets.each do |jet|
+
+ %h2= link_to jet.title, jet
+
+%br	
+= link_to "Post a new listing", new_jet_path, class: "btn btn-primary"
